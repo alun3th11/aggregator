@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Агрегатор языковых платформ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Агрегатор платформ онлайн-обучения иностранным языкам</h1>
+  </header>
+
+  <section class="controls">
+    <div class="filters">
+      <button onclick="filter('all')">Все</button>
+      <button onclick="filter('free')">Бесплатные</button>
+      <button onclick="filter('live')">С живыми уроками</button>
+    </div>
+    <div class="sort">
+      <label for="sortSelect">Сортировать по:</label>
+      <select id="sortSelect" onchange="sortCards()">
+        <option value="default">Без сортировки</option>
+        <option value="name">Названию</option>
+        <option value="level">Уровню</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card free">
+      <h2>Duolingo</h2>
+      <p>Бесплатное приложение с геймификацией и микрошагами.</p>
+      <p><strong>Уровень:</strong> Начальный, Средний</p>
+      <button onclick="toggleDetails(this)">Подробнее</button>
+      <div class="details">
+        <p><strong>Год основания:</strong> 2011</p>
+        <p><strong>Кому будет полезно:</strong> начинающим, тем, кто хочет тренировать словарный запас и грамматику.</p>
+        <p><strong>Возможности:</strong> интерактивные задания, игры, отслеживание прогресса.</p>
+        <a href="https://www.duolingo.com/" target="_blank">Перейти на сайт</a>
+      </div>
+    </div>
+
+    <div class="card live">
+      <h2>Skyeng</h2>
+      <p>Индивидуальные уроки с преподавателем, персонализированные курсы.</p>
+      <p><strong>Уровень:</strong> Все уровни</p>
+      <button onclick="toggleDetails(this)">Подробнее</button>
+      <div class="details">
+        <p><strong>Год основания:</strong> 2012</p>
+        <p><strong>Кому будет полезно:</strong> взрослым и детям любого уровня, готовящимся к экзаменам или переезду.</p>
+        <p><strong>Возможности:</strong> персональный курс, преподаватель, интерактивная платформа, языковые клубы.</p>
+        <a href="https://skyeng.ru/" target="_blank">Перейти на сайт</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Яндекс.Практикум</h2>
+      <p>Структурированное обучение английскому языку с наставником.</p>
+      <p><strong>Уровень:</strong> Начальный, Средний</p>
+      <button onclick="toggleDetails(this)">Подробнее</button>
+      <div class="details">
+        <p><strong>Год основания:</strong> 2019</p>
+        <p><strong>Кому будет полезно:</strong> тем, кто хочет системно освоить язык с поддержкой куратора.</p>
+        <p><strong>Возможности:</strong> пошаговые модули, обратная связь, проекты, проверка заданий.</p>
+        <a href="https://practicum.yandex.ru/" target="_blank">Перейти на сайт</a>
+      </div>
+    </div>
+
+    <div class="card free">
+      <h2>Memrise</h2>
+      <p>Геймификация, карточки и видео с носителями языка.</p>
+      <p><strong>Уровень:</strong> Начальный, Средний</p>
+      <button onclick="toggleDetails(this)">Подробнее</button>
+      <div class="details">
+        <p><strong>Год основания:</strong> 2010</p>
+        <p><strong>Кому будет полезно:</strong> тем, кто любит учиться играя.</p>
+        <p><strong>Возможности:</strong> карточки, видеокурсы, произношение от носителей.</p>
+        <a href="https://www.memrise.com/" target="_blank">Перейти на сайт</a>
+      </div>
+    </div>
+
+    <div class="card live">
+      <h2>Preply</h2>
+      <p>Онлайн-уроки с преподавателями по индивидуальному графику.</p>
+      <p><strong>Уровень:</strong> Все уровни</p>
+      <button onclick="toggleDetails(this)">Подробнее</button>
+      <div class="details">
+        <p><strong>Год основания:</strong> 2012</p>
+        <p><strong>Кому будет полезно:</strong> тем, кто хочет общаться с носителями и индивидуальными преподавателями.</p>
+        <p><strong>Возможности:</strong> подбор преподавателя, гибкий график, видеочаты.</p>
+        <a href="https://preply.com/" target="_blank">Перейти на сайт</a>
+      </div>
+    </div>
+
+    <div class="card free">
+      <h2>Busuu</h2>
+      <p>Обучение с интерактивными упражнениями и носителями языка.</p>
+      <p><strong>Уровень:</strong> Все уровни</p>
+      <button onclick="toggleDetails(this)">Подробнее</button>
+      <div class="details">
+        <p><strong>Год основания:</strong> 2008</p>
+        <p><strong>Кому будет полезно:</strong> детям, взрослым, начинающим и продолжающим.</p>
+        <p><strong>Возможности:</strong> курсы, общение с носителями, проверка упражнений.</p>
+        <a href="https://www.busuu.com/" target="_blank">Перейти на сайт</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Агрегатор образовательных платформ</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
